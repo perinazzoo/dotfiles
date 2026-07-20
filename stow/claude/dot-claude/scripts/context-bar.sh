@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Color theme: gray, orange, blue, teal, green, lavender, rose, gold, slate, cyan
 # Preview colors with: bash scripts/color-preview.sh
