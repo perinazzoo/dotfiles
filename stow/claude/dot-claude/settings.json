@@ -72,7 +72,7 @@
             "command": "~/.claude/scripts/auto-format.sh"
           }
         ]
-      },
+      }
     ]
   },
   "statusLine": {
