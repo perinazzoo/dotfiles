@@ -8,7 +8,7 @@
     "pr": ""
   },
   "permissions": {
-    "defaultMode": "acceptEdits",
+    "defaultMode": "auto",
     "allow": [
       "Bash(find:*)",
       "Bash(date:*)",
