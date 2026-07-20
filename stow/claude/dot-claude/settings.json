@@ -8,6 +8,7 @@
     "pr": ""
   },
   "permissions": {
+    "defaultMode": "acceptEdits",
     "allow": [
       "Bash(find:*)",
       "Bash(date:*)",
@@ -33,13 +34,20 @@
       "Read(.env.*.example)"
     ],
     "deny": [
-      "Bash(npm run build:*)",
       "Read(.env)",
-      "Read(.env.*)",
       "Read(**/secrets/*)",
       "Read(**/*credential*)",
       "Read(**/*.pem)",
-      "Read(**/*.key)"
+      "Read(**/*.key)",
+      "Bash(git rm:*)",
+      "Bash(rm:*)",
+      "Bash(sudo:*)",
+      "Bash(pip:*)", "Bash(pip3:*)", "Bash(pipx:*)"
+    ],
+    "ask": [
+      "Bash(gh pr merge *)",
+      "Bash(mv:*)",
+      "Bash(scp:*)"
     ]
   },
   "model": "sonnet",
@@ -54,6 +62,17 @@
           }
         ]
       }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/scripts/auto-format.sh"
+          }
+        ]
+      },
     ]
   },
   "statusLine": {
