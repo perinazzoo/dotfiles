@@ -8,7 +8,6 @@
     "pr": ""
   },
   "permissions": {
-    "defaultMode": "auto",
     "allow": [
       "Bash(find:*)",
       "Bash(date:*)",
@@ -42,15 +41,18 @@
       "Bash(git rm:*)",
       "Bash(rm:*)",
       "Bash(sudo:*)",
-      "Bash(pip:*)", "Bash(pip3:*)", "Bash(pipx:*)"
+      "Bash(pip:*)",
+      "Bash(pip3:*)",
+      "Bash(pipx:*)"
     ],
     "ask": [
       "Bash(gh pr merge *)",
       "Bash(mv:*)",
       "Bash(scp:*)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
-  "model": "sonnet",
+  "model": "opus",
   "hooks": {
     "PreToolUse": [
       {
@@ -73,6 +75,16 @@
           }
         ]
       }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"/Users/gabrielperinazzo/.claude/hooks/context-mode-cache-heal.mjs\""
+          }
+        ]
+      }
     ]
   },
   "statusLine": {
@@ -90,13 +102,13 @@
     "feature-dev@claude-plugins-official": true,
     "obsidian@obsidian-skills": true,
     "context7@claude-plugins-official": true,
-    "skill-creator@claude-plugins-official": true,
     "github@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": false,
-    "pr-review-toolkit@claude-plugins-official": true,
     "context-mode@context-mode": true,
     "claude-code-wakatime@wakatime": true,
-    "compound-engineering@compound-engineering-plugin": true
+    "compound-engineering@compound-engineering-plugin": true,
+    "mattpocock-skills@claude-plugins-official": true,
+    "figma@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "obsidian-skills": {
@@ -122,11 +134,18 @@
         "source": "github",
         "repo": "EveryInc/compound-engineering-plugin"
       }
+    },
+    "cloudflare": {
+      "source": {
+        "source": "github",
+        "repo": "cloudflare/skills"
+      }
     }
   },
   "effortLevel": "low",
   "promptSuggestionEnabled": false,
   "awaySummaryEnabled": false,
+  "pluginConfigs": {},
   "tui": "fullscreen",
   "theme": "dark",
   "remoteControlAtStartup": true,
