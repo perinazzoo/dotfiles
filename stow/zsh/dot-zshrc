@@ -117,6 +117,7 @@ alias cc='claude --continue'
 alias cr='claude --resume'
 alias c='claude'
 alias crud='cd ~/github/crud.com.br'
+alias strix='DOCKER_HOST=unix://$HOME/.docker/run/docker.sock strix'
 
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
@@ -242,3 +243,6 @@ case ":$PATH:" in
 esac
 # pnpm end
 export GITHUB_TOKEN=$(gh auth token)
+
+# strix
+export PATH=/Users/gabrielperinazzo/.strix/bin:$PATH
