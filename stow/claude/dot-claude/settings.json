@@ -89,7 +89,6 @@
     "context-mode@context-mode": true,
     "claude-code-wakatime@wakatime": true,
     "compound-engineering@compound-engineering-plugin": true,
-    "mattpocock-skills@claude-plugins-official": true,
     "figma@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
