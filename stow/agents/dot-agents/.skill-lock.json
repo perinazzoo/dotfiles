@@ -1,0 +1,230 @@
+{
+  "version": 3,
+  "skills": {
+    "nestjs-best-practices": {
+      "source": "kadajett/agent-nestjs-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kadajett/agent-nestjs-skills.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "f9effeccffc3918f51a7d4e912be2873de21d35c",
+      "installedAt": "2026-03-29T04:29:45.794Z",
+      "updatedAt": "2026-03-29T04:29:45.794Z"
+    },
+    "turborepo": {
+      "source": "vercel/turborepo",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel/turborepo.git",
+      "skillPath": "skills/turborepo/SKILL.md",
+      "skillFolderHash": "d9e552805d05140a8d8a4c4d9c6e282b850a0e45",
+      "installedAt": "2026-03-29T04:30:12.422Z",
+      "updatedAt": "2026-03-29T04:30:12.422Z"
+    },
+    "prisma-database-setup": {
+      "source": "prisma/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/prisma/skills.git",
+      "skillPath": "prisma-database-setup/SKILL.md",
+      "skillFolderHash": "24865c9b659196ff3f14a756713f5193ed18addc",
+      "installedAt": "2026-03-29T04:30:16.293Z",
+      "updatedAt": "2026-04-04T14:28:26.252Z"
+    },
+    "sentry-fix-issues": {
+      "source": "getsentry/sentry-for-ai",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/getsentry/sentry-for-ai.git",
+      "skillPath": "skills/sentry-fix-issues/SKILL.md",
+      "skillFolderHash": "c0f5bde3473dd62ce2ed8c3179e8e8ecfed6c0ee",
+      "installedAt": "2026-04-01T15:28:05.964Z",
+      "updatedAt": "2026-04-01T15:28:05.964Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "installedAt": "2026-04-01T15:29:22.393Z",
+      "updatedAt": "2026-04-01T15:29:22.393Z"
+    },
+    "prisma-client-api": {
+      "source": "prisma/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/prisma/skills.git",
+      "skillPath": "prisma-client-api/SKILL.md",
+      "skillFolderHash": "cb6a31f762f6547c7e4e8a4e41e6fb0b55120c0e",
+      "installedAt": "2026-04-04T14:28:25.780Z",
+      "updatedAt": "2026-04-04T14:28:25.780Z"
+    },
+    "prisma-driver-adapter-implementation": {
+      "source": "prisma/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/prisma/skills.git",
+      "skillPath": "prisma-driver-adapter-implementation/SKILL.md",
+      "skillFolderHash": "107ff529d10bc4750b44064c0e5a0e6bd0cad7f4",
+      "installedAt": "2026-04-04T14:28:26.681Z",
+      "updatedAt": "2026-04-04T14:28:26.681Z"
+    },
+    "prisma-postgres": {
+      "source": "prisma/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/prisma/skills.git",
+      "skillPath": "prisma-postgres/SKILL.md",
+      "skillFolderHash": "eac595e39fa49e4e685934ca90c8253e33f30a10",
+      "installedAt": "2026-04-04T14:28:27.138Z",
+      "updatedAt": "2026-04-04T14:28:27.138Z"
+    },
+    "prisma-postgres-setup": {
+      "source": "prisma/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/prisma/skills.git",
+      "skillPath": "prisma-postgres-setup/SKILL.md",
+      "skillFolderHash": "15a1ca58d420397d3c769f28d27f010d7a884f61",
+      "installedAt": "2026-04-04T14:28:27.577Z",
+      "updatedAt": "2026-04-04T14:28:27.577Z"
+    },
+    "prisma-upgrade-v7": {
+      "source": "prisma/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/prisma/skills.git",
+      "skillPath": "prisma-upgrade-v7/SKILL.md",
+      "skillFolderHash": "d9205d2b1586131c2e04b3195b4b2f5cb3cf0c8a",
+      "installedAt": "2026-04-04T14:28:28.033Z",
+      "updatedAt": "2026-04-04T14:28:28.033Z"
+    },
+    "prisma-cli": {
+      "source": "prisma/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/prisma/skills.git",
+      "skillPath": "prisma-cli/SKILL.md",
+      "skillFolderHash": "14c8f12522d965ec8a23dee2c541c0b4c1ed9d57",
+      "installedAt": "2026-04-04T14:28:28.541Z",
+      "updatedAt": "2026-04-04T14:28:28.541Z"
+    },
+    "shadcn": {
+      "source": "shadcn/ui",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/shadcn/ui.git",
+      "skillPath": "skills/shadcn/SKILL.md",
+      "skillFolderHash": "a7903e883aaeead6ed509468b499310729968ad9",
+      "installedAt": "2026-04-16T18:42:52.730Z",
+      "updatedAt": "2026-04-16T18:42:52.730Z"
+    },
+    "signoz-creating-alerts": {
+      "source": "SigNoz/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/SigNoz/agent-skills.git",
+      "skillPath": "skills/signoz-creating-alerts/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-09-08T20:10:37.195Z",
+      "updatedAt": "2026-09-08T20:10:37.195Z"
+    },
+    "signoz-creating-dashboards": {
+      "source": "SigNoz/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/SigNoz/agent-skills.git",
+      "skillPath": "skills/signoz-creating-dashboards/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-09-08T20:10:37.198Z",
+      "updatedAt": "2026-09-08T20:10:37.198Z"
+    },
+    "signoz-explaining-alerts": {
+      "source": "SigNoz/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/SigNoz/agent-skills.git",
+      "skillPath": "skills/signoz-explaining-alerts/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-09-08T20:10:37.200Z",
+      "updatedAt": "2026-09-08T20:10:37.200Z"
+    },
+    "signoz-explaining-dashboards": {
+      "source": "SigNoz/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/SigNoz/agent-skills.git",
+      "skillPath": "skills/signoz-explaining-dashboards/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-09-08T20:10:37.201Z",
+      "updatedAt": "2026-09-08T20:10:37.201Z"
+    },
+    "signoz-investigating-alerts": {
+      "source": "SigNoz/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/SigNoz/agent-skills.git",
+      "skillPath": "skills/signoz-investigating-alerts/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-09-08T20:10:37.203Z",
+      "updatedAt": "2026-09-08T20:10:37.203Z"
+    },
+    "signoz-managing-views": {
+      "source": "SigNoz/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/SigNoz/agent-skills.git",
+      "skillPath": "skills/signoz-managing-views/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-09-08T20:10:37.204Z",
+      "updatedAt": "2026-09-08T20:10:37.204Z"
+    },
+    "signoz-modifying-dashboards": {
+      "source": "SigNoz/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/SigNoz/agent-skills.git",
+      "skillPath": "skills/signoz-modifying-dashboards/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-09-08T20:10:37.206Z",
+      "updatedAt": "2026-09-08T20:10:37.206Z"
+    },
+    "signoz-reducing-telemetry-cost": {
+      "source": "SigNoz/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/SigNoz/agent-skills.git",
+      "skillPath": "skills/signoz-reducing-telemetry-cost/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-09-08T20:10:37.207Z",
+      "updatedAt": "2026-09-08T20:10:37.207Z"
+    },
+    "signoz-searching-docs": {
+      "source": "SigNoz/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/SigNoz/agent-skills.git",
+      "skillPath": "skills/signoz-searching-docs/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-09-08T20:10:37.208Z",
+      "updatedAt": "2026-09-08T20:10:37.208Z"
+    },
+    "signoz-setting-up-observability": {
+      "source": "SigNoz/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/SigNoz/agent-skills.git",
+      "skillPath": "skills/signoz-setting-up-observability/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-09-08T20:10:37.209Z",
+      "updatedAt": "2026-09-08T20:10:37.209Z"
+    },
+    "signoz-writing-clickhouse-queries": {
+      "source": "SigNoz/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/SigNoz/agent-skills.git",
+      "skillPath": "skills/signoz-writing-clickhouse-queries/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-09-08T20:10:37.211Z",
+      "updatedAt": "2026-09-08T20:10:37.211Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "droid",
+    "gemini-cli",
+    "github-copilot",
+    "kilo",
+    "kimi-code-cli",
+    "opencode",
+    "warp",
+    "zed",
+    "claude-code"
+  ]
+}
