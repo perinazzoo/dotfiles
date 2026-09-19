@@ -246,3 +246,5 @@ export GITHUB_TOKEN=$(gh auth token)
 
 # strix
 export PATH=/Users/gabrielperinazzo/.strix/bin:$PATH
+export DRAWDB_API_KEY="$(security find-generic-password -a "$USER" -s "drawdb-api-key" -w)"
+export SIGNOZ_API_KEY="$(security find-generic-password -a "$USER" -s "signoz-api-key" -w)"
