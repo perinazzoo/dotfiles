@@ -28,9 +28,7 @@
       "Bash(git log:*)",
       "Bash(git diff:*)",
       "Bash(git tag:*)",
-      "Bash(npm run:*)",
-      "Read(.env.example)",
-      "Read(.env.*.example)"
+      "Bash(npm run:*)"
     ],
     "deny": [
       "Read(.env)",

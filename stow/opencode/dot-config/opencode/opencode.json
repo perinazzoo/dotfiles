@@ -19,8 +19,6 @@
       "*": "allow",
       "*.env": "deny",
       "*.env.*": "deny",
-      "*.env.example": "allow",
-      "*.env.*.example": "allow",
       "**/secrets/*": "deny",
       "**/*credential*": "deny",
       "**/*.pem": "deny",
