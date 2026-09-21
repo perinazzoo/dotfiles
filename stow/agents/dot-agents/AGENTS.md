@@ -9,6 +9,18 @@
 ## Git commits
 
 - **Always write commit messages in English** — subject line and body — even when the conversation, the codebase, or the project's own strings (error messages, docs, comments) are in another language. A project instruction that mandates another language for user-facing strings does not extend to commit messages.
+- Commit messages must not be co-authored by agents.
+- Write the subject in the imperative mood, present tense (e.g. "add", not "added" or "adds").
+- Keep messages concise but descriptive; the subject line must not exceed 72 characters (count only the first line, ignore the body when checking length).
+- Follow Conventional Commits format for the subject: `<type>(<scope>): <description>`, where:
+  - `type` ∈ {feat, fix, refactor, chore, docs, test, style}
+  - `scope` is derived from the top-level folder or module changed; use `core` if no clear scope exists
+  - `description` starts with a lowercase letter and does not end with a period
+- When a change needs more than one commit, split them in this priority order:
+  1. Different commit types (feat vs fix vs refactor)
+  2. Tests separated from implementation
+  3. Different domains, only if unrelated
+  - Do not split tightly coupled changes.
 
 ## Testing preferences
 
