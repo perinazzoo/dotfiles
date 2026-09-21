@@ -49,7 +49,14 @@
       "Bash(sudo:*)",
       "Bash(pip:*)",
       "Bash(pip3:*)",
-      "Bash(pipx:*)"
+      "Bash(pipx:*)",
+      "Bash(*.env)",
+      "Bash(*.env.*)",
+      "Bash(*.pem)",
+      "Bash(*.key)",
+      "Bash(*.tfvars)",
+      "Bash(*credential*)",
+      "Bash(*secrets/*)"
     ],
     "ask": [
       "Bash(gh pr merge *)",

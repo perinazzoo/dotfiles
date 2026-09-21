@@ -13,5 +13,44 @@
         "DRAWDB_API_KEY": "{env:DRAWDB_API_KEY}"
       }
     }
+  },
+  "permission": {
+    "read": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow",
+      "*.env.*.example": "allow",
+      "**/secrets/*": "deny",
+      "**/*credential*": "deny",
+      "**/*.pem": "deny",
+      "**/*.key": "deny",
+      "**/*.tfvars": "deny"
+    },
+    "edit": {
+      "*.env": "deny",
+      "**/*.tfvars": "deny"
+    },
+    "bash": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.pem": "deny",
+      "*.key": "deny",
+      "*.tfvars": "deny",
+      "*credential*": "deny",
+      "*secrets/*": "deny",
+      "rm *": "deny",
+      "git rm *": "deny",
+      "sudo *": "deny",
+      "terraform apply *": "deny",
+      "terraform destroy *": "deny",
+      "pip *": "deny",
+      "pip3 *": "deny",
+      "pipx *": "deny",
+      "mv *": "ask",
+      "scp *": "ask",
+      "gh pr merge *": "ask"
+    }
   }
 }
