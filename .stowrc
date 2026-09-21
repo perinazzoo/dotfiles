@@ -6,4 +6,3 @@
 --ignore=\.Trashes
 --ignore=Thumbs\.db
 --ignore=desktop\.ini
---ignore=opencode\.jsonc

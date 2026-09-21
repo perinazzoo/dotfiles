@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    "opencode-wakatime",
+    "compound-engineering@git+https://github.com/EveryInc/compound-engineering-plugin.git",
+    "context-mode"
+  ],
+  "mcp": {
+    "drawdb": {
+      "type": "local",
+      "command": ["npx", "-y", "@drawdb/mcp"],
+      "environment": {
+        "DRAWDB_API_KEY": "{env:DRAWDB_API_KEY}"
+      }
+    }
+  }
+}
