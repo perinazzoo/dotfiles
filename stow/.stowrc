@@ -1,5 +1,5 @@
 --dotfiles
--d stow
+-d .
 -t ~
 --ignore=\.DS_Store
 --ignore=\.Spotlight-V100
