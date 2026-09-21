@@ -1,1 +1,2 @@
-../../agents/dot-agents/AGENTS.md
+@RTK.md
+@../.agents/AGENTS.md
