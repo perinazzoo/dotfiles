@@ -63,6 +63,7 @@
     "defaultMode": "auto"
   },
   "model": "sonnet",
+  "syncClaudeAiSkills": false,
   "hooks": {
     "PostToolUse": [
       {
@@ -250,8 +251,7 @@
     "typescript-lsp@claude-plugins-official": false,
     "context-mode@context-mode": true,
     "claude-code-wakatime@wakatime": true,
-    "compound-engineering@compound-engineering-plugin": true,
-    "figma@claude-plugins-official": true
+    "compound-engineering@compound-engineering-plugin": true
   },
   "extraKnownMarketplaces": {
     "obsidian-skills": {
@@ -293,5 +293,10 @@
   "theme": "dark",
   "remoteControlAtStartup": true,
   "agentPushNotifEnabled": true,
-  "voiceEnabled": false
+  "voiceEnabled": false,
+  "modelSettings": {
+    "claude-sonnet-5": {
+      "effortLevel": "medium"
+    }
+  }
 }
