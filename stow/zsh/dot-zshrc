@@ -112,7 +112,6 @@ source $ZSH/oh-my-zsh.sh
 alias trampo='cd ~/github'
 alias t9='cd /Volumes/T9'
 alias branch-delete-all='git branch | grep -v "main\|master\|develop" | xargs git branch -D'
-alias cp-git-diff='git diff --staged | pbcopy'
 alias cc='claude --continue'
 alias cr='claude --resume'
 alias c='claude'
@@ -248,3 +247,35 @@ export GITHUB_TOKEN=$(gh auth token)
 export PATH=/Users/gabrielperinazzo/.strix/bin:$PATH
 export DRAWDB_API_KEY="$(security find-generic-password -a "$USER" -s "drawdb-api-key" -w)"
 export SIGNOZ_API_KEY="$(security find-generic-password -a "$USER" -s "signoz-api-key" -w)"
+
+bindkey '\e[1;3D' backward-word
+bindkey '\e[1;3C' forward-word
+export INSTALLED_PATH="/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/data"
+
+export PATH=$INSTALLED_PATH:$PATH
+
+export TIZEN_SDK_ROOT="/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/data"
+
+export PATH=$TIZEN_SDK_ROOT:$PATH
+
+export TIZEN_SDK="/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/data"
+
+export PATH=$TIZEN_SDK:$PATH
+
+export TIZEN_TOOLS_PATH="/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/data/tools"
+
+export PATH=$TIZEN_TOOLS_PATH:$PATH
+
+export TIZEN_CLI_PATH="/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/data/tools/ide/bin"
+
+export PATH=$TIZEN_CLI_PATH:$PATH
+
+export TIZEN_DOTNET_ROOT=/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/dotnet
+export PATH=$TIZEN_DOTNET_ROOT:$PATH
+export DOTNET_ROOT=/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/dotnet
+export PATH=$DOTNET_ROOT:$PATH
+export DOTNET_INSTALL_DIR=/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/dotnet
+export PATH=$DOTNET_INSTALL_DIR:$PATH
+
+# jest guard
+[ -f "$HOME/.zsh/jest-guard.zsh" ] && source "$HOME/.zsh/jest-guard.zsh"
