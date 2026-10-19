@@ -9,6 +9,87 @@
       "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
       "installedAt": "2026-04-01T15:29:22.393Z",
       "updatedAt": "2026-04-01T15:29:22.393Z"
+    },
+    "block-kit": {
+      "source": "slackapi/slack-skills-plugin",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/slackapi/slack-skills-plugin.git",
+      "skillPath": "skills/block-kit/SKILL.md",
+      "skillFolderHash": "f59e7860ced983de09367f1c9627cd2801da5a96",
+      "installedAt": "2026-10-19T14:52:28.264Z",
+      "updatedAt": "2026-10-19T14:52:28.264Z"
+    },
+    "create-slack-app": {
+      "source": "slackapi/slack-skills-plugin",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/slackapi/slack-skills-plugin.git",
+      "skillPath": "skills/create-slack-app/SKILL.md",
+      "skillFolderHash": "effa41d7a4de0d22cba820284b1968aaff5128ee",
+      "installedAt": "2026-10-19T14:52:28.279Z",
+      "updatedAt": "2026-10-19T14:52:28.279Z"
+    },
+    "deploy-slack-app": {
+      "source": "slackapi/slack-skills-plugin",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/slackapi/slack-skills-plugin.git",
+      "skillPath": "skills/deploy-slack-app/SKILL.md",
+      "skillFolderHash": "e6a49020ab81b85cd738e900941f50d312f36546",
+      "installedAt": "2026-10-19T14:52:28.279Z",
+      "updatedAt": "2026-10-19T14:52:28.279Z"
+    },
+    "slack-api": {
+      "source": "slackapi/slack-skills-plugin",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/slackapi/slack-skills-plugin.git",
+      "skillPath": "skills/slack-api/SKILL.md",
+      "skillFolderHash": "54d6500b7a62bb732eeb68735464840e2efbbe9a",
+      "installedAt": "2026-10-19T14:52:28.280Z",
+      "updatedAt": "2026-10-19T14:52:28.280Z"
+    },
+    "slack-cli": {
+      "source": "slackapi/slack-skills-plugin",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/slackapi/slack-skills-plugin.git",
+      "skillPath": "skills/slack-cli/SKILL.md",
+      "skillFolderHash": "fb09d94ecbaef7d87635c21193e7bfa284dccdc7",
+      "installedAt": "2026-10-19T14:52:28.281Z",
+      "updatedAt": "2026-10-19T14:52:28.281Z"
+    },
+    "slack-docs": {
+      "source": "slackapi/slack-skills-plugin",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/slackapi/slack-skills-plugin.git",
+      "skillPath": "skills/slack-docs/SKILL.md",
+      "skillFolderHash": "b97ec2907e671dce6f55e64f1eb69f5a1d9f19fa",
+      "installedAt": "2026-10-19T14:52:28.282Z",
+      "updatedAt": "2026-10-19T14:52:28.282Z"
+    },
+    "slack-messaging": {
+      "source": "slackapi/slack-skills-plugin",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/slackapi/slack-skills-plugin.git",
+      "skillPath": "skills/slack-messaging/SKILL.md",
+      "skillFolderHash": "5ccf077a4b361ec90ffd0dd250bb8524cb55507e",
+      "installedAt": "2026-10-19T14:52:28.285Z",
+      "updatedAt": "2026-10-19T14:52:28.285Z"
+    },
+    "slack-search": {
+      "source": "slackapi/slack-skills-plugin",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/slackapi/slack-skills-plugin.git",
+      "skillPath": "skills/slack-search/SKILL.md",
+      "skillFolderHash": "c0069f4e0308708216482c90b1fb0ec05037d7b6",
+      "installedAt": "2026-10-19T14:52:28.286Z",
+      "updatedAt": "2026-10-19T14:52:28.286Z"
+    },
+    "test-slack-app": {
+      "source": "slackapi/slack-skills-plugin",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/slackapi/slack-skills-plugin.git",
+      "skillPath": "skills/test-slack-app/SKILL.md",
+      "skillFolderHash": "fe06f0a04e763d01cf1478da1425187390d2eb91",
+      "installedAt": "2026-10-19T14:52:28.288Z",
+      "updatedAt": "2026-10-19T14:52:28.288Z"
     }
   },
   "dismissed": {
@@ -25,6 +106,7 @@
     "kilo",
     "kimi-code-cli",
     "opencode",
+    "pi",
     "warp",
     "zed",
     "claude-code"
