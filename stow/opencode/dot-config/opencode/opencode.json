@@ -21,6 +21,13 @@
       "type": "remote",
       "url": "https://mcp.sentry.dev/mcp"
     },
+    "signoz": {
+      "type": "remote",
+      "url": "https://observability.ipda.com.br/mcp",
+      "headers": {
+        "SIGNOZ-API-KEY": "{env:SIGNOZ_API_KEY}"
+      }
+    },
     "slack": {
       "type": "remote",
       "url": "https://mcp.slack.com/mcp",
