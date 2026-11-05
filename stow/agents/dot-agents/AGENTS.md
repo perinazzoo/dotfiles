@@ -26,6 +26,12 @@ Short sentences. RFC 2119 keywords for obligations. Commit subject MUST be imper
 
 - Prefer behavior tests (real inputs/outputs, observable effects) over implementation/interaction tests (asserting a mocked collaborator was called with specific args, e.g. `toHaveBeenCalledWith`). If mocking a collaborator is unavoidable, make sure that collaborator's own logic has real behavior-level coverage somewhere, and call it out if it doesn't.
 
+## Multi-repo work
+
+- An agent owns only its workspace's repository.
+- When a task requires changes in another repository, you MUST NOT edit it directly. You MUST delegate through the `cross-repo` skill, which creates a fresh Paseo workspace and agent per repository — even if the user does not mention Paseo.
+- Reading other repositories to understand a contract is allowed.
+
 ## Language
 
 User-facing text MUST be in Brazilian Portuguese (pt-BR).
