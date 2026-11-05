@@ -13,7 +13,7 @@ allowed-tools: Bash(git status*), Bash(git diff*), Bash(git add*), Bash(git comm
 
 ## Your task
 
-### 1. Run tests (ignore for now, tests currently have mem leak)
+### 1. Run tests
 
 Before committing, run the test suite:
 
