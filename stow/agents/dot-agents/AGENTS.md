@@ -1,6 +1,8 @@
+> **The key words MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY in this file are to be interpreted as described in [RFC 2119](https://www.rfc-editor.org/rfc/rfc2119).**
+
 ## Directives
 
-Short sentences. RFC 2119 keywords for obligations. Commit subject MUST be imperative mood (`add`, not `added`/`adds`); body only for a fact the diff cannot show. Comments only where code needs clarification — never narration.
+Short sentences. Commit subject MUST be imperative mood (`add`, not `added`/`adds`); body only for a fact the diff cannot show. Comments only where code needs clarification — never narration.
 
 ## Code comments
 
