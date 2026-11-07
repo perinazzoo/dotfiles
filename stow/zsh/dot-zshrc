@@ -265,25 +265,5 @@ fi
 bindkey '\e[1;3D' backward-word
 bindkey '\e[1;3C' forward-word
 
-# Tizen SDK
-if $IS_MACOS; then
-  export INSTALLED_PATH="$HOME/.tizen-extension-platform/server/sdktools/data"
-  export PATH=$INSTALLED_PATH:$PATH
-  export TIZEN_SDK_ROOT="$HOME/.tizen-extension-platform/server/sdktools/data"
-  export PATH=$TIZEN_SDK_ROOT:$PATH
-  export TIZEN_SDK="$HOME/.tizen-extension-platform/server/sdktools/data"
-  export PATH=$TIZEN_SDK:$PATH
-  export TIZEN_TOOLS_PATH="$HOME/.tizen-extension-platform/server/sdktools/data/tools"
-  export PATH=$TIZEN_TOOLS_PATH:$PATH
-  export TIZEN_CLI_PATH="$HOME/.tizen-extension-platform/server/sdktools/data/tools/ide/bin"
-  export PATH=$TIZEN_CLI_PATH:$PATH
-  export TIZEN_DOTNET_ROOT=$HOME/.tizen-extension-platform/server/sdktools/dotnet
-  export PATH=$TIZEN_DOTNET_ROOT:$PATH
-  export DOTNET_ROOT=$HOME/.tizen-extension-platform/server/sdktools/dotnet
-  export PATH=$DOTNET_ROOT:$PATH
-  export DOTNET_INSTALL_DIR=$HOME/.tizen-extension-platform/server/sdktools/dotnet
-  export PATH=$DOTNET_INSTALL_DIR:$PATH
-fi
-
 # jest guard
 [ -f "$HOME/.zsh/jest-guard.zsh" ] && source "$HOME/.zsh/jest-guard.zsh"
