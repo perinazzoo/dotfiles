@@ -1,4 +1,5 @@
 --dotfiles
+--no-folding
 -d stow
 -t ~
 --ignore=\.DS_Store

@@ -1,2 +1,21 @@
 .DS_Store
 *.bak
+
+# Claude Code runtime data (never commit: contains login token and history)
+stow/claude/dot-claude/.credentials.json
+stow/claude/dot-claude/history.jsonl
+stow/claude/dot-claude/mcp-needs-auth-cache.json
+stow/claude/dot-claude/backups/
+stow/claude/dot-claude/cache/
+stow/claude/dot-claude/downloads/
+stow/claude/dot-claude/plugins/
+stow/claude/dot-claude/projects/
+stow/claude/dot-claude/session-env/
+stow/claude/dot-claude/sessions/
+stow/claude/dot-claude/state/
+stow/claude/dot-claude/tasks/
+stow/claude/dot-claude/teams/
+stow/claude/dot-claude/todos/
+stow/claude/dot-claude/shell-snapshots/
+stow/claude/dot-claude/statsig/
+stow/claude/dot-claude/ide/
