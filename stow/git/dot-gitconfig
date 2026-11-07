@@ -1,0 +1,30 @@
+[user]
+	email = gabrielperinazo@gmail.com
+	name = perinazzoo
+	signingkey = ~/.ssh/id_ed25519_signing.pub
+[core]
+	pager =
+	ignorecase = false
+[pager]
+	log = false
+[push]
+	followTags = true
+	autoSetupRemote = true
+[alias]
+	c = !git commit -m
+	s = !git status -s
+	l = !git log --reverse --pretty=tformat:'%C("Yellow")%h %C("Cyan")%s %C("BrightWhite")by %C("Magenta")%cn %C("BrightWhite")| %C("Green")%cr'
+	amend = !git add --all && git commit --amend --no-edit
+	count = !git shortlog -s --grep
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = ~/.config/git/allowed_signers
+
+# Per-machine settings (editor, credential helper). Not versioned.
+[include]
+	path = ~/.gitconfig.local
