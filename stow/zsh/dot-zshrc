@@ -1,18 +1,24 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export JAVA_HOME=$(/usr/libexec/java_home -v17)
-export PATH=$JAVA_HOME/bin:$PATH
-export PATH="/Users/gabrielperinazzo/Library/Python/3.9/bin:$PATH"
+IS_MACOS=false; [[ "$OSTYPE" == darwin* ]] && IS_MACOS=true
+
+if $IS_MACOS; then
+  export JAVA_HOME=$(/usr/libexec/java_home -v17)
+  export PATH=$JAVA_HOME/bin:$PATH
+  export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Android
-export ANDROID_SDK_ROOT=/Volumes/T9/trabalho/Applications/Android/sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/tools
-export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+if $IS_MACOS; then
+  export ANDROID_SDK_ROOT=/Volumes/T9/trabalho/Applications/Android/sdk
+  export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+  export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+  export PATH=$PATH:$ANDROID_SDK_ROOT/tools
+  export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+fi
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -170,18 +176,17 @@ zinit wait lucid for \
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+if $IS_MACOS; then
+  # Add Visual Studio Code (code)
+  export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+  export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+  # Added by Windsurf
+  export PATH="$HOME/.codeium/windsurf/bin:$PATH"
+fi
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/gabrielperinazzo/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gabrielperinazzo/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/gabrielperinazzo/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gabrielperinazzo/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
-# Added by Windsurf
-export PATH="/Users/gabrielperinazzo/.codeium/windsurf/bin:$PATH"
+# Google Cloud SDK (PATH + completion)
+if [ -f "$HOME/Downloads/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/Downloads/google-cloud-sdk/path.zsh.inc"; fi
+if [ -f "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc"; fi
 ###-begin-pm2-completion-###
 ### credits to npm for the completion file model
 #
@@ -223,59 +228,62 @@ elif type compctl &>/dev/null; then
 fi
 ###-end-pm2-completion-###
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/gabrielperinazzo/.docker/completions $fpath)
+$IS_MACOS && fpath=($HOME/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
 export PATH="$PATH:/usr/local/bin"
 export PATH="$HOME/.docker/bin:$PATH"
-export GRADLE_USER_HOME="/Volumes/T9/trabalho/Applications/Android/gradle-cache"
+$IS_MACOS && export GRADLE_USER_HOME="/Volumes/T9/trabalho/Applications/Android/gradle-cache"
 export AWS_PAGER=""
 export PATH="$HOME/.local/bin:$PATH"
-eval "$(rbenv init - zsh)"
+command -v rbenv >/dev/null && eval "$(rbenv init - zsh)"
 
 # pnpm
-export PNPM_HOME="/Users/gabrielperinazzo/Library/pnpm"
+if $IS_MACOS; then
+  export PNPM_HOME="$HOME/Library/pnpm"
+else
+  export PNPM_HOME="$HOME/.local/share/pnpm"
+fi
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-export GITHUB_TOKEN=$(gh auth token)
+command -v gh >/dev/null && export GITHUB_TOKEN=$(gh auth token 2>/dev/null)
 
 # strix
-export PATH=/Users/gabrielperinazzo/.strix/bin:$PATH
-export DRAWDB_API_KEY="$(security find-generic-password -a "$USER" -s "drawdb-api-key" -w)"
-export SIGNOZ_API_KEY="$(security find-generic-password -a "$USER" -s "signoz-api-key" -w)"
+export PATH=$HOME/.strix/bin:$PATH
+
+# API keys: macOS Keychain on the Mac; elsewhere ~/.secrets.zsh (chmod 600, not versioned)
+if $IS_MACOS; then
+  export DRAWDB_API_KEY="$(security find-generic-password -a "$USER" -s "drawdb-api-key" -w)"
+  export SIGNOZ_API_KEY="$(security find-generic-password -a "$USER" -s "signoz-api-key" -w)"
+fi
+[ -f "$HOME/.secrets.zsh" ] && source "$HOME/.secrets.zsh"
 
 bindkey '\e[1;3D' backward-word
 bindkey '\e[1;3C' forward-word
-export INSTALLED_PATH="/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/data"
 
-export PATH=$INSTALLED_PATH:$PATH
-
-export TIZEN_SDK_ROOT="/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/data"
-
-export PATH=$TIZEN_SDK_ROOT:$PATH
-
-export TIZEN_SDK="/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/data"
-
-export PATH=$TIZEN_SDK:$PATH
-
-export TIZEN_TOOLS_PATH="/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/data/tools"
-
-export PATH=$TIZEN_TOOLS_PATH:$PATH
-
-export TIZEN_CLI_PATH="/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/data/tools/ide/bin"
-
-export PATH=$TIZEN_CLI_PATH:$PATH
-
-export TIZEN_DOTNET_ROOT=/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/dotnet
-export PATH=$TIZEN_DOTNET_ROOT:$PATH
-export DOTNET_ROOT=/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/dotnet
-export PATH=$DOTNET_ROOT:$PATH
-export DOTNET_INSTALL_DIR=/Users/gabrielperinazzo/.tizen-extension-platform/server/sdktools/dotnet
-export PATH=$DOTNET_INSTALL_DIR:$PATH
+# Tizen SDK
+if $IS_MACOS; then
+  export INSTALLED_PATH="$HOME/.tizen-extension-platform/server/sdktools/data"
+  export PATH=$INSTALLED_PATH:$PATH
+  export TIZEN_SDK_ROOT="$HOME/.tizen-extension-platform/server/sdktools/data"
+  export PATH=$TIZEN_SDK_ROOT:$PATH
+  export TIZEN_SDK="$HOME/.tizen-extension-platform/server/sdktools/data"
+  export PATH=$TIZEN_SDK:$PATH
+  export TIZEN_TOOLS_PATH="$HOME/.tizen-extension-platform/server/sdktools/data/tools"
+  export PATH=$TIZEN_TOOLS_PATH:$PATH
+  export TIZEN_CLI_PATH="$HOME/.tizen-extension-platform/server/sdktools/data/tools/ide/bin"
+  export PATH=$TIZEN_CLI_PATH:$PATH
+  export TIZEN_DOTNET_ROOT=$HOME/.tizen-extension-platform/server/sdktools/dotnet
+  export PATH=$TIZEN_DOTNET_ROOT:$PATH
+  export DOTNET_ROOT=$HOME/.tizen-extension-platform/server/sdktools/dotnet
+  export PATH=$DOTNET_ROOT:$PATH
+  export DOTNET_INSTALL_DIR=$HOME/.tizen-extension-platform/server/sdktools/dotnet
+  export PATH=$DOTNET_INSTALL_DIR:$PATH
+fi
 
 # jest guard
 [ -f "$HOME/.zsh/jest-guard.zsh" ] && source "$HOME/.zsh/jest-guard.zsh"
