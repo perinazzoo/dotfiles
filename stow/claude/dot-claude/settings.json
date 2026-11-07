@@ -81,7 +81,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "f=\"$HOME/.claude/hooks/context-mode-cache-heal.mjs\"; [ -x \"$f\" ] && \"$f\" || true"
+            "command": "\"$HOME/.claude/hooks/context-mode-cache-heal.mjs\""
           }
         ]
       }
