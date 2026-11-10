@@ -37,3 +37,7 @@ Short sentences. Commit subject MUST be imperative mood (`add`, not `added`/`add
 ## Language
 
 User-facing text MUST be in Brazilian Portuguese (pt-BR).
+
+## RTK
+
+@~/.claude/RTK.md
