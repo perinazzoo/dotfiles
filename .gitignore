@@ -19,3 +19,6 @@ stow/claude/dot-claude/todos/
 stow/claude/dot-claude/shell-snapshots/
 stow/claude/dot-claude/statsig/
 stow/claude/dot-claude/ide/
+
+# Paseo writes synced skill buckets here at runtime
+stow/agents/dot-agents/skills/synced/
