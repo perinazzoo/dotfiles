@@ -13,6 +13,14 @@
         "DRAWDB_API_KEY": "{env:DRAWDB_API_KEY}"
       }
     },
+    "dokploy": {
+      "type": "local",
+      "command": ["npx", "-y", "@dokploy/mcp"],
+      "environment": {
+        "DOKPLOY_URL": "{env:DOKPLOY_URL}",
+        "DOKPLOY_API_KEY": "{env:DOKPLOY_API_KEY}"
+      }
+    },
     "clickup": {
       "type": "remote",
       "url": "https://mcp.clickup.com/mcp"

@@ -265,6 +265,8 @@ export PATH=$HOME/.strix/bin:$PATH
 if $IS_MACOS; then
   export DRAWDB_API_KEY="$(security find-generic-password -a "$USER" -s "drawdb-api-key" -w)"
   export SIGNOZ_API_KEY="$(security find-generic-password -a "$USER" -s "signoz-api-key" -w)"
+  export DOKPLOY_URL="$(security find-generic-password -a "$USER" -s "dokploy-url" -w 2>/dev/null)"
+  export DOKPLOY_API_KEY="$(security find-generic-password -a "$USER" -s "dokploy-api-key" -w 2>/dev/null)"
 fi
 [ -f "$HOME/.secrets.zsh" ] && source "$HOME/.secrets.zsh"
 
