@@ -90,6 +90,16 @@
       "skillFolderHash": "fe06f0a04e763d01cf1478da1425187390d2eb91",
       "installedAt": "2026-10-19T14:52:28.288Z",
       "updatedAt": "2026-10-19T14:52:28.288Z"
+    },
+    "unslop-ui": {
+      "source": "felipebasurto/unslop-ui",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/felipebasurto/unslop-ui.git",
+      "commit": "cd891160453f26aaacc569bad96a8d10d595076d",
+      "skillPath": "skills/unslop-ui/SKILL.md",
+      "skillFolderHash": "80a4e3b496ccaf6afdf43eef056dc1ad129d78c6",
+      "installedAt": "2026-11-19T04:05:35.014Z",
+      "updatedAt": "2026-11-19T04:05:35.014Z"
     }
   },
   "dismissed": {
@@ -101,6 +111,7 @@
     "codex",
     "cursor",
     "droid",
+    "fx",
     "gemini-cli",
     "github-copilot",
     "kilo",
